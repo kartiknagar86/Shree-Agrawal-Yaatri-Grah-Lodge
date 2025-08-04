@@ -58,10 +58,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Make room prices clickable to open booking section with pre-selected room
-    document.querySelectorAll('.room-price').forEach(priceElement => {
-        priceElement.addEventListener('click', function() {
-            // Find the room card containing this price element
+    // Make room prices and Book Now buttons clickable to open booking section with pre-selected room
+    document.querySelectorAll('.room-price, .btn-primary').forEach(element => {
+        element.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Find the room card containing this element
             const roomCard = this.closest('.room-card');
             
             // Get the room title
@@ -142,15 +144,31 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to save booking data to localStorage
     function saveBookingData(data) {
         // Generate a unique ID for the booking
-        const bookingId = Date.now().toString();
+        const bookingId = 'BK' + Date.now().toString();
         
-        // Add timestamp and status
-        data.id = bookingId;
-        data.timestamp = new Date().toISOString();
-        data.status = 'pending'; // pending, confirmed, cancelled
+        // Create booking object with all required fields
+        const booking = {
+            id: bookingId,
+            name: data.name,
+            email: data.email,
+            phone: data.phone,
+            roomType: getRoomTypeName(data.roomtype),
+            checkin: data.checkin,
+            checkout: data.checkout,
+            guests: data.guests,
+            message: data.message || '',
+            status: 'pending', // pending, confirmed, cancelled
+            timestamp: new Date().toISOString()
+        };
         
-        // Save booking with unique key
-        localStorage.setItem(`booking_${bookingId}`, JSON.stringify(data));
+        // Get existing bookings
+        const existingBookings = JSON.parse(localStorage.getItem('bookings') || '[]');
+        
+        // Add new booking
+        existingBookings.push(booking);
+        
+        // Save back to localStorage
+        localStorage.setItem('bookings', JSON.stringify(existingBookings));
         
         console.log('Booking saved with ID:', bookingId);
         return bookingId;
@@ -329,4 +347,35 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // Add booking form submit handler
+    const bookingForm = document.getElementById('bookingForm');
+    if (bookingForm) {
+        bookingForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            if (validateBookingForm()) {
+                // Show success message
+                const submitBtn = this.querySelector('button[type="submit"]');
+                const originalText = submitBtn.textContent;
+                submitBtn.textContent = 'Booking Submitted!';
+                submitBtn.style.backgroundColor = '#27ae60';
+                submitBtn.disabled = true;
+                
+                // Reset form after 3 seconds
+                setTimeout(() => {
+                    this.reset();
+                    submitBtn.textContent = originalText;
+                    submitBtn.style.backgroundColor = '';
+                    submitBtn.disabled = false;
+                    
+                    // Remove highlight effect
+                    const bookingFormDiv = document.querySelector('.booking-form');
+                    if (bookingFormDiv) {
+                        bookingFormDiv.classList.remove('highlight-form');
+                    }
+                }, 3000);
+            }
+        });
+    }
 });
