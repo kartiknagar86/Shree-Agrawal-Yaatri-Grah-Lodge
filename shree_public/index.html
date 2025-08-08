@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shree Agrawal Yaatri Grah & Lodge - Premium accommodation with modern amenities in the heart of the city. Book AC/Non-AC rooms at affordable rates with 24/7 service.">
+    <meta name="keywords" content="hotel, lodge, yaatri grah, accommodation, AC rooms, non-AC rooms, budget hotel, guest house, booking">
+    <meta name="author" content="Shree Agrawal Yaatri Grah & Lodge">
+    <meta property="og:title" content="Shree Agrawal Yaatri Grah & Lodge - Premium Accommodation">
+    <meta property="og:description" content="Experience comfort and hospitality at its finest. Book your stay with us for modern amenities and exceptional service.">
+    <meta property="og:type" content="website">
+    <title>Shree Agrawal Yaatri Grah & Lodge - Premium Accommodation & Guest House</title>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏨</text></svg>">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="booking-styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="script-new.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Shree Agrawal Yaatri Grah & Lodge</h2>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#rooms" class="nav-link">Room Details</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#contact" class="nav-link">Contact Us</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Shree Agrawal Yaatri Grah & Lodge</h1>
+            <p class="hero-tagline">Experience Premium Hospitality & Comfort</p>
+            <p class="hero-description">Your trusted accommodation partner offering modern amenities, exceptional service, and affordable luxury in the heart of the city.</p>
+            <div class="hero-buttons">
+                <a href="#rooms" class="btn btn-primary">View Rooms</a>
+                <a href="#booking" class="btn btn-secondary" onclick="openBookingModal()">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Us</h2>
+                <p>Discover our story and commitment to excellence</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Your Trusted Accommodation Partner Since 2015</h3>
+                    <p class="about-intro">Shree Agrawal Yaatri Grah & Lodge has been the premier choice for discerning travelers seeking quality accommodation. Strategically located in the city center, we combine traditional hospitality with modern conveniences to ensure an exceptional stay experience.</p>
+                    <p class="about-details">Our commitment to excellence is reflected in every aspect of our service - from our well-appointed rooms and attentive staff to our round-the-clock support and value-driven pricing. Whether you're traveling for business or leisure, we provide the perfect blend of comfort, convenience, and affordability.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-wifi"></i>
+                            <span>Complimentary High-Speed Wi-Fi</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-car"></i>
+                            <span>Secure Parking Facility</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <span>24/7 Concierge Service</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Safe & Sanitized Environment</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-utensils"></i>
+                            <span>In-House Dining Options</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-concierge-bell"></i>
+                            <span>Room Service Available</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Multiple Payment Options</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-broom"></i>
+                            <span>Daily Housekeeping</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="C:\Users\MAHAKAL\Desktop\Yatri grah website\shree_public\images\image.jpg" alt="About Us">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Room Details Section -->
+    <section id="rooms" class="rooms">
+        <div class="container">
+            <div class="section-header">
+                <h2>Room Details</h2>
+                <p>Choose from our comfortable and well-appointed rooms</p>
+            </div>
+            <div class="rooms-grid">
+                <!-- AC Rooms -->
+                <div class="room-card">
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="AC Room">
+                    </div>
+                    <div class="room-details">
+                        <h3>AC Deluxe Room</h3>
+                        <div class="room-features">
+                            <span><i class="fas fa-snowflake"></i> Air Conditioning</span>
+                            <span><i class="fas fa-tv"></i> LED TV</span>
+                            <span><i class="fas fa-wifi"></i> Free Wi-Fi</span>
+                            <span><i class="fas fa-bath"></i> Attached Bathroom</span>
+                        </div>
+                        <div class="room-price">
+                            <span class="price">₹1,500</span>
+                            <span class="per-night">per night</span>
+                        </div>
+                        <a href="#" class="btn btn-primary book-now-btn" onclick="openBookingModal()" data-room="ac-deluxe">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="room-card">
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="AC Premium Room">
+                    </div>
+                    <div class="room-details">
+                        <h3>AC Premium Room</h3>
+                        <div class="room-features">
+                            <span><i class="fas fa-snowflake"></i> Air Conditioning</span>
+                            <span><i class="fas fa-tv"></i> Smart TV</span>
+                            <span><i class="fas fa-wifi"></i> Free Wi-Fi</span>
+                            <span><i class="fas fa-coffee"></i> Mini Fridge</span>
+                        </div>
+                        <div class="room-price">
+                            <span class="price">₹2,000</span>
+                            <span class="per-night">per night</span>
+                        </div>
+                        <a href="#" class="btn btn-primary book-now-btn" onclick="openBookingModal()" data-room="ac-premium">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Non-AC Rooms -->
+                <div class="room-card">
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Non-AC Room">
+                    </div>
+                    <div class="room-details">
+                        <h3>Non-AC Standard Room</h3>
+                        <div class="room-features">
+                            <span><i class="fas fa-fan"></i> Ceiling Fan</span>
+                            <span><i class="fas fa-tv"></i> LED TV</span>
+                            <span><i class="fas fa-wifi"></i> Free Wi-Fi</span>
+                            <span><i class="fas fa-bath"></i> Attached Bathroom</span>
+                        </div>
+                        <div class="room-price">
+                            <span class="price">₹800</span>
+                            <span class="per-night">per night</span>
+                        </div>
+                        <a href="#" class="btn btn-primary book-now-btn" onclick="openBookingModal()" data-room="non-ac-standard">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="room-card">
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Non-AC Economy Room">
+                    </div>
+                    <div class="room-details">
+                        <h3>Non-AC Economy Room</h3>
+                        <div class="room-features">
+                            <span><i class="fas fa-fan"></i> Ceiling Fan</span>
+                            <span><i class="fas fa-bed"></i> Comfortable Bed</span>
+                            <span><i class="fas fa-wifi"></i> Free Wi-Fi</span>
+                            <span><i class="fas fa-bath"></i> Shared Bathroom</span>
+                        </div>
+                        <div class="room-price">
+                            <span class="price">₹500</span>
+                            <span class="per-night">per night</span>
+                        </div>
+                        <a href="#" class="btn btn-primary book-now-btn" onclick="openBookingModal()" data-room="non-ac-economy">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Gallery</h2>
+                <p>Take a virtual tour of our lodge and facilities</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/shree1.jpg" alt="Shree Agrawal Yaatri Grah - Room 1" style="max-width: 100%; height: auto; border-radius: 8px;" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/shree2.jpg" alt="Shree Agrawal Yaatri Grah - Room 2" style="max-width: 100%; height: auto; border-radius: 8px;" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/shree3.jpg" alt="Shree Agrawal Yaatri Grah - Room 3" style="max-width: 100%; height: auto; border-radius: 8px;" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/shree4.jpg" alt="Shree Agrawal Yaatri Grah - Room 4" style="max-width: 100%; height: auto; border-radius: 8px;" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/shree5.jpg" alt="Shree Agrawal Yaatri Grah - Room 5" style="max-width: 100%; height: auto; border-radius: 8px;" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/shree6.jpg" alt="Shree Agrawal Yaatri Grah - Room 6" style="max-width: 100%; height: auto; border-radius: 8px;" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking" style="display: none;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Book Your Stay</h2>
+                <p>Reserve your room with us for a comfortable stay</p>
+            </div>
+            <div class="booking-content">
+                <div class="booking-form">
+                    <h3><i class="fas fa-calendar-check"></i> Booking Form</h3>
+                    <form id="bookingForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name"><i class="fas fa-user"></i> Full Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone"><i class="fas fa-phone"></i> Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email"><i class="fas fa-envelope"></i> Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="checkin"><i class="fas fa-calendar-alt"></i> Check-in Date</label>
+                                <input type="date" id="checkin" name="checkin" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="checkout"><i class="fas fa-calendar-alt"></i> Check-out Date</label>
+                                <input type="date" id="checkout" name="checkout" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="roomtype"><i class="fas fa-bed"></i> Room Type</label>
+                                <select id="roomtype" name="roomtype" required>
+                                    <option value="">Select Room Type</option>
+                                    <option value="ac-deluxe">AC Deluxe Room - ₹1,500/night</option>
+                                    <option value="ac-premium">AC Premium Room - ₹2,000/night</option>
+                                    <option value="non-ac-standard">Non-AC Standard Room - ₹800/night</option>
+                                    <option value="non-ac-economy">Non-AC Economy Room - ₹500/night</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="guests"><i class="fas fa-users"></i> Number of Guests</label>
+                                <select id="guests" name="guests" required>
+                                    <option value="">Select Guests</option>
+                                    <option value="1">1 Guest</option>
+                                    <option value="2">2 Guests</option>
+                                    <option value="3">3 Guests</option>
+                                    <option value="4">4 Guests</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message"><i class="fas fa-comment-alt"></i> Special Requests</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Any special requirements or requests..."></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary" onclick="submitBookingAndRedirect()">
+                            <i class="fas fa-paper-plane"></i> Submit Booking Request
+                        </button>
+                    </form>
+                </div>
+                <div class="whatsapp-booking">
+                    <h3><i class="fab fa-whatsapp"></i> Quick WhatsApp Booking</h3>
+                    <p>Prefer to book via WhatsApp? Click the button below to start a conversation with us.</p>
+                    <a href="https://wa.me/919827637611?text=Hi! I would like to book a room at Shree Agrawal Yaatri Grah & Lodge. Please provide me with booking details." class="whatsapp-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        Book via WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="booking-info">
+                <h4><i class="fas fa-info-circle"></i> Booking Information</h4>
+                <ul>
+                    <li><i class="fas fa-clock"></i> Check-in: 12:00 PM onwards</li>
+                    <li><i class="fas fa-clock"></i> Check-out: 11:00 AM</li>
+                    <li><i class="fas fa-credit-card"></i> Payment accepted: Cash, UPI, Cards</li>
+                    <li><i class="fas fa-shield-alt"></i> Free cancellation up to 24 hours before check-in</li>
+                    <li><i class="fas fa-wifi"></i> Complimentary Wi-Fi included</li>
+                    <li><i class="fas fa-car"></i> Free parking available</li>
+                </ul>
+            </div>
+            <div style="text-align: center; margin-top: 30px;">
+                <button onclick="goBackFromBooking()" class="btn btn-secondary">
+                    <i class="fas fa-arrow-left"></i> Back to Home
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Get in touch with us for bookings and inquiries</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Shree Agrawal Yaatri Grah & Lodge<br>Dani Gate Small Bridge Report Ujjain<br>Ujjain, Madhya Pradesh</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 9827637611(24x7)<br>+91 9827637611 (Reception)</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@shreeagrawalyaatrigrah.com<br>reservations@shreeagrawalyaatrigrah.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Reception Hours</h4>
+                            <p>24/7 Service Available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <h3>Find Us on Map</h3>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.1234567890123!2d75.78901234567890!3d23.12345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962f3c3c3c3c3!2sShree%20Agrawal%20Yaatri%20Grah%20%26%20Lodge!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin" 
+                                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <div class="map-link">
+                            <a href="https://maps.app.goo.gl/3KL2C6jxtRVdfD1z7" target="_blank" class="btn btn-secondary">
+                                <i class="fas fa-map-marker-alt"></i>
+                                View on Google Maps
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Shree Agrawal Yaatri Grah & Lodge</h3>
+                    <p>Your trusted accommodation partner providing comfortable stays with excellent hospitality.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="admin.html" aria-label="Admin Panel" title="Admin Panel"><i class="fas fa-user-shield"></i></a>
+                    </div>
+                    <a href="https://wa.me/919827637611"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#rooms">Room Details</a></li>
+                        <li><a href="#booking">Booking</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#rooms">AC Rooms</a></li>
+                        <li><a href="#rooms">Non-AC Rooms</a></li>
+                        <li><a href="#booking">Online Booking</a></li>
+                        <li><a href="#contact">24/7 Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +91 98276 37611</p>
+                    <p><i class="fas fa-envelope"></i> info@shreeagrawalyaatrigrah.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Dani Gate Small Bridge Report Ujjain</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Shree Agrawal Yaatri Grah & Lodge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>

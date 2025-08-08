@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WhatsApp Booking Test</title>
+</head>
+<body>
+  <form id="bookingForm">
+    <input type="text" id="name" placeholder="Name" required>
+    <input type="text" id="phone" placeholder="Phone" required>
+    <button type="submit">Submit Booking Request</button>
+  </form>
+  <script>
+    window.onload = function() {
+      var form = document.getElementById('bookingForm');
+      if (form) {
+        form.onsubmit = function(e) {
+          e.preventDefault();
+          var name = document.getElementById('name').value || '';
+          var phone = document.getElementById('phone').value || '';
+          var whatsappMessage = `Booking Request%0AName: ${name}%0APhone: ${phone}`;
+          var whatsappUrl = `https://wa.me/919827637611?text=${whatsappMessage}`;
+          window.location.href = whatsappUrl;
+        }
+      }
+    }
+  </script>
+</body>
+</html> 
